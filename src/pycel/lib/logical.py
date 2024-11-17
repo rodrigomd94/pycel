@@ -92,7 +92,7 @@ def if_(test, true_value, false_value=0):
         return true_value if cleaned else false_value
 
 
-def iferror(arg, value_if_error):
+def iferror(arg, value_if_error=""):
     # Excel reference: https://support.microsoft.com/en-us/office/
     #   IFERROR-function-C526FD07-CAEB-47B8-8BB6-63F3E417F611
     if in_array_formula_context and has_array_arg(arg, value_if_error):
